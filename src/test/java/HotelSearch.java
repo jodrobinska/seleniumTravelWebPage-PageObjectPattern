@@ -40,7 +40,7 @@ public class HotelSearch {
         Duration duration = Duration.ofSeconds(5);
         WebDriverWait wait = new WebDriverWait(driver,duration);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='select2-match' and text()='Dubai']")));
-        driver.findElement(By.xpath("//span[@class='select2-match' and text()='Dubai']")).click(); // czy mam to zostawić
+        driver.findElement(By.xpath("//span[@class='select2-match' and text()='Dubai']")).click();
 
 
     }
