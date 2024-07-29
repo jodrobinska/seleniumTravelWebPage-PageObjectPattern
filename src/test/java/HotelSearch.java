@@ -34,6 +34,7 @@ public class HotelSearch {
         driver.manage().window().maximize();
         driver.get("http://www.kurs-selenium.pl/demo/");
 
+        // set city name
         driver.findElement(By.xpath("//span[text()='Search by Hotel or City Name']")).click();
         driver.findElement(By.xpath("//div[@id='select2-drop']//input")).sendKeys("Dubai");
 
@@ -41,6 +42,12 @@ public class HotelSearch {
         WebDriverWait wait = new WebDriverWait(driver,duration);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='select2-match' and text()='Dubai']")));
         driver.findElement(By.xpath("//span[@class='select2-match' and text()='Dubai']")).click();
+
+        // set check in
+        driver.findElement(By.name("checkin")).sendKeys("20/07/2025");
+        // set check out
+        driver.findElement(By.name("checkout")).sendKeys("28/07/2025");
+
 
 
     }
