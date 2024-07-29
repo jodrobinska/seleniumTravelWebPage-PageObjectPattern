@@ -43,10 +43,19 @@ public class HotelSearch {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='select2-match' and text()='Dubai']")));
         driver.findElement(By.xpath("//span[@class='select2-match' and text()='Dubai']")).click();
 
-        // set check in
+        //------ set check in
         driver.findElement(By.name("checkin")).sendKeys("20/07/2025");
-        // set check out
+        //------ set check out
         driver.findElement(By.name("checkout")).sendKeys("28/07/2025");
+
+        // jeśli korzystamy z kalendarza
+        //--- check in
+        driver.findElement(By.name("checkin")).click();
+        driver.findElements(By.xpath("//td[@class='day ' and text()='30']")).stream().filter(el -> el.isDisplayed()).findFirst().ifPresent(el -> el.click());
+
+        //--- check out
+        driver.findElement(By.name("checkout")).click();
+        driver.findElements(By.xpath("//td[@class='day ' and text()='31']")).stream().filter(el -> el.isDisplayed()).findFirst().ifPresent(el -> el.click());
 
 
 

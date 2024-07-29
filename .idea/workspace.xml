@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Set city name">
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Set check in and check out">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HotelSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HotelSearch.java" afterDir="false" />
     </list>
@@ -100,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722279093377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Set check in and check out">
+      <option name="closed" value="true" />
+      <created>1722279869683</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722279869683</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,7 +124,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Set city name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set city name" />
+    <MESSAGE value="Set check in and check out" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set check in and check out" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
