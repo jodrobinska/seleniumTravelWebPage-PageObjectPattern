@@ -47,6 +47,7 @@ public class SignUpTest {
         driver.findElement(By.name("email")).sendKeys("judit9407@gmail.com");
         driver.findElement(By.name("password")).sendKeys("Test123");
         driver.findElement(By.name("confirmpassword")).sendKeys("Test123");
+        driver.findElement(By.xpath("//button[text()=' Sign Up']")).click();
 
     }
 
