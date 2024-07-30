@@ -7,6 +7,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -70,11 +71,16 @@ public class HotelSearch {
 
         //--- list of hotels
         List<String> hotelNames = driver.findElements(By.xpath("//h4[contains(@class,'list_title')]//b")).stream()
-                .map(el -> el.getText())
+                .map(el -> el.getAttribute("textContent"))
                 .collect(Collectors.toList());
         System.out.println(hotelNames.size());
+        hotelNames.forEach(el -> System.out.println(el));
 
-
+        //--- Asercje
+        Assert.assertEquals("Jumeirah Beach Hotel",hotelNames.get(0));
+        Assert.assertEquals("Oasis Beach Tower",hotelNames.get(1));
+        Assert.assertEquals("Rose Rayhaan Rotana",hotelNames.get(2));
+        Assert.assertEquals("Hyatt Regency Perth",hotelNames.get(3));
 
     }
 
