@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="SignUp">
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Sign Up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTest.java" afterDir="false" />
     </list>
@@ -159,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722368418433</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Sign Up">
+      <option name="closed" value="true" />
+      <created>1722369170323</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722369170323</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,7 +188,8 @@
     <MESSAGE value="List of hotels" />
     <MESSAGE value="Assert" />
     <MESSAGE value="SignUp" />
-    <option name="LAST_COMMIT_MESSAGE" value="SignUp" />
+    <MESSAGE value="Sign Up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sign Up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
