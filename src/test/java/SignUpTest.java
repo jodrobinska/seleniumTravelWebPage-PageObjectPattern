@@ -30,7 +30,7 @@ public class SignUpTest {
     }
 
     @Test
-    public void signUpTest() {
+    public void signUpTest() throws InterruptedException {
 
         WebDriver driver = getDriver("chrome");
         driver.manage().window().maximize();
@@ -45,12 +45,12 @@ public class SignUpTest {
         driver.findElement(By.name("firstname")).sendKeys("Judyta");
         driver.findElement(By.name("lastname")).sendKeys(lastName);
         driver.findElement(By.name("phone")).sendKeys("666111222");
-        driver.findElement(By.name("email")).sendKeys("judit@gmail.com");
+        driver.findElement(By.name("email")).sendKeys("judit8@gmail.com");
         driver.findElement(By.name("password")).sendKeys("Test123");
         driver.findElement(By.name("confirmpassword")).sendKeys("Test123");
         driver.findElement(By.xpath("//button[text()=' Sign Up']")).click();
 
-        WebElement heading = driver.findElement(By.xpath("//h3[@class='RTL']"));
+        WebElement heading = driver.findElement(By.cssSelector(".RTL)"));
 
         Assert.assertTrue(heading.getText().contains(lastName));
 
