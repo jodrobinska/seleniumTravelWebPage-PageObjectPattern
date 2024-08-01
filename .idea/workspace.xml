@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Sign Up">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="implicitlyWait">
       <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722542676193</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="implicitlyWait">
+      <option name="closed" value="true" />
+      <created>1722544192759</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722544192759</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,7 +237,8 @@
     <MESSAGE value="SignUp" />
     <MESSAGE value="Sign Up pass" />
     <MESSAGE value="Sign Up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sign Up" />
+    <MESSAGE value="implicitlyWait" />
+    <option name="LAST_COMMIT_MESSAGE" value="implicitlyWait" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
