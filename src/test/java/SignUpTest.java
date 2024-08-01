@@ -50,6 +50,7 @@ public class SignUpTest {
         int randomNumber = (int) (Math.random()*1000); //numer
         String email = "judit" + randomNumber + "@gmail.com"; //email
 
+        // Filling the Form
         driver.findElement(By.name("firstname")).sendKeys("Judyta");
         driver.findElement(By.name("lastname")).sendKeys(lastName);
         driver.findElement(By.name("phone")).sendKeys("666111222");

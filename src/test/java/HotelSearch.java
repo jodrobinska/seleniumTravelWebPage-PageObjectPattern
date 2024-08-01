@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.InvalidArgumentException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -81,6 +82,46 @@ public class HotelSearch {
         Assert.assertEquals("Oasis Beach Tower",hotelNames.get(1));
         Assert.assertEquals("Rose Rayhaan Rotana",hotelNames.get(2));
         Assert.assertEquals("Hyatt Regency Perth",hotelNames.get(3));
+
+    }
+
+
+    @Test
+    public void searchHotelWithoutName() {
+
+        WebDriver driver = getDriver("chrome");
+        driver.manage().window().maximize();
+        driver.get("http://www.kurs-selenium.pl/demo/");
+
+
+        //------ set check in
+        driver.findElement(By.name("checkin")).sendKeys("05/08/2024");
+        //------ set check out
+        driver.findElement(By.name("checkout")).sendKeys("09/08/2024");
+
+        // jeśli korzystamy z kalendarza
+        //--- check in
+        driver.findElement(By.name("checkin")).click();
+        driver.findElements(By.xpath("//td[@class='day ' and text()='30']")).stream().filter(el -> el.isDisplayed()).findFirst().ifPresent(el -> el.click());
+
+        //--- check out
+        driver.findElement(By.name("checkout")).click();
+        driver.findElements(By.xpath("//td[@class='day ' and text()='31']")).stream().filter(el -> el.isDisplayed()).findFirst().ifPresent(el -> el.click());
+
+        //--- travellers
+        driver.findElement(By.id("travellersInput")).click();
+        driver.findElement(By.id("childPlusBtn")).click();
+
+        //--- search
+        driver.findElement(By.xpath("//button[text()=' Search']")).click();
+
+
+        WebElement noResultHeading = driver.findElement(By.xpath("//h2[text()='No Results Found']"));
+
+        //--- Asercje
+        Assert.assertTrue(noResultHeading.isDisplayed());
+        Assert.assertEquals(noResultHeading.getText(),"No Results Found");
+
 
     }
 
