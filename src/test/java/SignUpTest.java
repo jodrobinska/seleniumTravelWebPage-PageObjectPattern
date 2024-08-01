@@ -45,14 +45,16 @@ public class SignUpTest {
         driver.findElement(By.name("firstname")).sendKeys("Judyta");
         driver.findElement(By.name("lastname")).sendKeys(lastName);
         driver.findElement(By.name("phone")).sendKeys("666111222");
-        driver.findElement(By.name("email")).sendKeys("judit8@gmail.com");
+        driver.findElement(By.name("email")).sendKeys("judit6@gmail.com");
         driver.findElement(By.name("password")).sendKeys("Test123");
         driver.findElement(By.name("confirmpassword")).sendKeys("Test123");
         driver.findElement(By.xpath("//button[text()=' Sign Up']")).click();
 
-        WebElement heading = driver.findElement(By.cssSelector(".RTL)"));
+        Thread.sleep(10000);
+        WebElement heading = driver.findElement(By.xpath("//h3[@class='RTL']"));
 
-        Assert.assertTrue(heading.getText().contains(lastName));
+        Assert.assertTrue(heading.getText().contains(lastName)); // czy heading zawiera nazwisko
+        Assert.assertEquals(heading.getText(),"Hi, Judyta Oska"); // (aktualny ze strony, oczekiwany przez nas)
 
     }
 
