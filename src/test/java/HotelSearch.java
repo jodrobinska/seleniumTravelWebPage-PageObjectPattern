@@ -78,10 +78,10 @@ public class HotelSearch {
         hotelNames.forEach(el -> System.out.println(el));
 
         //--- Asercje
-        Assert.assertEquals("Jumeirah Beach Hotel",hotelNames.get(0));
-        Assert.assertEquals("Oasis Beach Tower",hotelNames.get(1));
-        Assert.assertEquals("Rose Rayhaan Rotana",hotelNames.get(2));
-        Assert.assertEquals("Hyatt Regency Perth",hotelNames.get(3));
+        Assert.assertEquals(hotelNames.get(0),"Jumeirah Beach Hotel"); // Expected - wpisany przeze mnie; Actual - znajdujący się na stronie
+        Assert.assertEquals(hotelNames.get(1),"Oasis Beach Tower");
+        Assert.assertEquals(hotelNames.get(2),"Rose Rayhaan Rotana");
+        Assert.assertEquals(hotelNames.get(3),"Hyatt Regency Perth");
 
     }
 
@@ -91,6 +91,7 @@ public class HotelSearch {
 
         WebDriver driver = getDriver("chrome");
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         driver.get("http://www.kurs-selenium.pl/demo/");
 
 
@@ -98,15 +99,6 @@ public class HotelSearch {
         driver.findElement(By.name("checkin")).sendKeys("05/08/2024");
         //------ set check out
         driver.findElement(By.name("checkout")).sendKeys("09/08/2024");
-
-        // jeśli korzystamy z kalendarza
-        //--- check in
-        driver.findElement(By.name("checkin")).click();
-        driver.findElements(By.xpath("//td[@class='day ' and text()='30']")).stream().filter(el -> el.isDisplayed()).findFirst().ifPresent(el -> el.click());
-
-        //--- check out
-        driver.findElement(By.name("checkout")).click();
-        driver.findElements(By.xpath("//td[@class='day ' and text()='31']")).stream().filter(el -> el.isDisplayed()).findFirst().ifPresent(el -> el.click());
 
         //--- travellers
         driver.findElement(By.id("travellersInput")).click();
