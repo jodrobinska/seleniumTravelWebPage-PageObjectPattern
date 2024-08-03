@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Search Hotel and assertions">
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Sign up empty form test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HotelSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HotelSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,26 +32,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.HotelSearch.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HotelSearch.searchHotel.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HotelSearch.searchHotelWithoutName.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SignUpTest.signUpTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/_Develope/projekt-na-3-judyta-odrobinska&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/_Develope/travelsWebPage/src/main/java/pl/edu/agh/qa/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.HotelSearch.executor": "Run",
+    "TestNG.HotelSearch.searchHotel.executor": "Run",
+    "TestNG.HotelSearch.searchHotelWithoutName.executor": "Run",
+    "TestNG.SignUpTest.signUpInvalidEmail.executor": "Run",
+    "TestNG.SignUpTest.signUpTest.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/_Develope/projekt-na-3-judyta-odrobinska",
+    "onboarding.tips.debug.path": "C:/_Develope/travelsWebPage/src/main/java/pl/edu/agh/qa/Main.java",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HotelSearch.searchHotelWithoutName">
+  <component name="RunManager" selected="TestNG.SignUpTest.signUpInvalidEmail">
     <configuration name="HotelSearch" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
@@ -88,6 +88,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SignUpTest.signUpInvalidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="travelsWebPage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTest" />
+      <option name="METHOD_NAME" value="signUpInvalidEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SignUpTest.signUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SignUpTest.signUpInvalidEmail" />
         <item itemvalue="TestNG.HotelSearch.searchHotelWithoutName" />
         <item itemvalue="TestNG.HotelSearch.searchHotel" />
         <item itemvalue="TestNG.SignUpTest.signUpTest" />
@@ -254,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722550487188</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Sign up empty form test">
+      <option name="closed" value="true" />
+      <created>1722719499333</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1722719499333</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,7 +302,8 @@
     <MESSAGE value="Random e-mail adress" />
     <MESSAGE value="Search Hotel Without Name" />
     <MESSAGE value="Search Hotel and assertions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search Hotel and assertions" />
+    <MESSAGE value="Sign up empty form test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sign up empty form test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
