@@ -36,6 +36,7 @@ public class HotelSearch {
 
         WebDriver driver = getDriver("chrome");
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         driver.get("http://www.kurs-selenium.pl/demo/");
 
         // set city name
@@ -83,6 +84,8 @@ public class HotelSearch {
         Assert.assertEquals(hotelNames.get(2),"Rose Rayhaan Rotana");
         Assert.assertEquals(hotelNames.get(3),"Hyatt Regency Perth");
 
+        driver.quit();
+
     }
 
 
@@ -113,6 +116,7 @@ public class HotelSearch {
         //--- Asercje
         Assert.assertTrue(noResultHeading.isDisplayed());
         Assert.assertEquals(noResultHeading.getText(),"No Results Found");
+        driver.quit();
     }
 
 }

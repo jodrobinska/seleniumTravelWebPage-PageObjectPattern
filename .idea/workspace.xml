@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Sign up empty form test">
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Add sign up test with invalid email">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HotelSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HotelSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +36,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.<default>.executor": "Run",
     "TestNG.HotelSearch.executor": "Run",
     "TestNG.HotelSearch.searchHotel.executor": "Run",
     "TestNG.HotelSearch.searchHotelWithoutName.executor": "Run",
@@ -52,18 +54,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SignUpTest.signUpInvalidEmail">
-    <configuration name="HotelSearch" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="travelsWebPage" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HotelSearch" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.&lt;default&gt;">
     <configuration name="HotelSearch.searchHotel" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
@@ -112,13 +103,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="travelsWebPage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.&lt;default&gt;" />
         <item itemvalue="TestNG.SignUpTest.signUpInvalidEmail" />
         <item itemvalue="TestNG.HotelSearch.searchHotelWithoutName" />
         <item itemvalue="TestNG.HotelSearch.searchHotel" />
         <item itemvalue="TestNG.SignUpTest.signUpTest" />
-        <item itemvalue="TestNG.HotelSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722719499333</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Add sign up test with invalid email">
+      <option name="closed" value="true" />
+      <created>1722720024801</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1722720024801</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,7 +312,8 @@
     <MESSAGE value="Search Hotel Without Name" />
     <MESSAGE value="Search Hotel and assertions" />
     <MESSAGE value="Sign up empty form test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sign up empty form test" />
+    <MESSAGE value="Add sign up test with invalid email" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sign up test with invalid email" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

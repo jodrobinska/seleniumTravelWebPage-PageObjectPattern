@@ -64,6 +64,7 @@ public class SignUpTest {
 
         Assert.assertTrue(heading.getText().contains(lastName)); // czy heading zawiera nazwisko
         Assert.assertEquals(heading.getText(),"Hi, Judyta Oska"); // (aktualny ze strony, oczekiwany przez nas)
+        driver.quit();
 
     }
 
@@ -94,6 +95,7 @@ public class SignUpTest {
         softAssert.assertTrue(errors.contains("The First name field is required."));
         softAssert.assertTrue(errors.contains("The Last Name field is required."));
         softAssert.assertAll();
+        driver.quit();
 
     }
 
@@ -132,6 +134,7 @@ public class SignUpTest {
                 .collect(Collectors.toList());
 
         Assert.assertTrue(errors.contains("The Email field must contain a valid email address."));
+        driver.quit();
 
     }
 
