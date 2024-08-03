@@ -113,8 +113,6 @@ public class HotelSearch {
         //--- Asercje
         Assert.assertTrue(noResultHeading.isDisplayed());
         Assert.assertEquals(noResultHeading.getText(),"No Results Found");
-
-
     }
 
 }

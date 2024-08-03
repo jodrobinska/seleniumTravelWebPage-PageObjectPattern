@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Search Hotel Without Name">
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Search Hotel and assertions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HotelSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HotelSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,20 +33,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.HotelSearch.executor": "Run",
-    "TestNG.HotelSearch.searchHotel.executor": "Run",
-    "TestNG.HotelSearch.searchHotelWithoutName.executor": "Run",
-    "TestNG.SignUpTest.signUpTest.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Judyta/IdeaProjects/SeleniumTests",
-    "onboarding.tips.debug.path": "C:/_Develope/travelsWebPage/src/main/java/pl/edu/agh/qa/Main.java",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.HotelSearch.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HotelSearch.searchHotel.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HotelSearch.searchHotelWithoutName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SignUpTest.signUpTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/_Develope/projekt-na-3-judyta-odrobinska&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/_Develope/travelsWebPage/src/main/java/pl/edu/agh/qa/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -245,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722549468645</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Search Hotel and assertions">
+      <option name="closed" value="true" />
+      <created>1722550487188</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722550487188</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,7 +280,8 @@
     <MESSAGE value="implicitlyWait" />
     <MESSAGE value="Random e-mail adress" />
     <MESSAGE value="Search Hotel Without Name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search Hotel Without Name" />
+    <MESSAGE value="Search Hotel and assertions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search Hotel and assertions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
