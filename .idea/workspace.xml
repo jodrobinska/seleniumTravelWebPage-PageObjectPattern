@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Add sign up test with invalid email">
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Tests with assertions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HotelSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HotelSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +53,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.&lt;default&gt;">
+  <component name="RunManager" selected="TestNG.SignUpTest">
     <configuration name="HotelSearch.searchHotel" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
@@ -79,23 +78,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTest.signUpInvalidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SignUpTest" />
-      <option name="METHOD_NAME" value="signUpInvalidEmail" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTest.signUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest.signUpInvalidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SignUpTest" />
-      <option name="METHOD_NAME" value="signUpTest" />
+      <option name="METHOD_NAME" value="signUpInvalidEmail" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -115,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SignUpTest" />
         <item itemvalue="TestNG.&lt;default&gt;" />
         <item itemvalue="TestNG.SignUpTest.signUpInvalidEmail" />
         <item itemvalue="TestNG.HotelSearch.searchHotelWithoutName" />
         <item itemvalue="TestNG.HotelSearch.searchHotel" />
-        <item itemvalue="TestNG.SignUpTest.signUpTest" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722720024801</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Tests with assertions">
+      <option name="closed" value="true" />
+      <created>1722721086293</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1722721086293</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -313,7 +319,8 @@
     <MESSAGE value="Search Hotel and assertions" />
     <MESSAGE value="Sign up empty form test" />
     <MESSAGE value="Add sign up test with invalid email" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sign up test with invalid email" />
+    <MESSAGE value="Tests with assertions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests with assertions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

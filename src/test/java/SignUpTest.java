@@ -8,6 +8,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -31,12 +33,24 @@ public class SignUpTest {
         }
     }
 
-    @Test
-    public void signUpTest() {
+    private WebDriver driver; // wszystkie metody klasy mają dostęp do tego pola
 
-        WebDriver driver = getDriver("chrome");
+    // before
+    @BeforeMethod
+    public void setup() {
+        driver = getDriver("chrome");
         driver.manage().window().maximize();
         driver.get("http://www.kurs-selenium.pl/demo/");
+    }
+
+    // after
+    @AfterMethod
+    public void tearDown() {
+        driver.quit();
+    }
+
+    @Test
+    public void signUpTest() {
 
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); // oczekiwanie na elementy
 
@@ -64,17 +78,12 @@ public class SignUpTest {
 
         Assert.assertTrue(heading.getText().contains(lastName)); // czy heading zawiera nazwisko
         Assert.assertEquals(heading.getText(),"Hi, Judyta Oska"); // (aktualny ze strony, oczekiwany przez nas)
-        driver.quit();
 
     }
 
 
     @Test
     public void signUpTestEmptyForm() {
-
-        WebDriver driver = getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.get("http://www.kurs-selenium.pl/demo/");
 
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); // oczekiwanie na elementy
 
@@ -95,17 +104,12 @@ public class SignUpTest {
         softAssert.assertTrue(errors.contains("The First name field is required."));
         softAssert.assertTrue(errors.contains("The Last Name field is required."));
         softAssert.assertAll();
-        driver.quit();
 
     }
 
 
     @Test
     public void signUpInvalidEmail() {
-
-        WebDriver driver = getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.get("http://www.kurs-selenium.pl/demo/");
 
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); // oczekiwanie na elementy
 
@@ -134,7 +138,6 @@ public class SignUpTest {
                 .collect(Collectors.toList());
 
         Assert.assertTrue(errors.contains("The Email field must contain a valid email address."));
-        driver.quit();
 
     }
 
