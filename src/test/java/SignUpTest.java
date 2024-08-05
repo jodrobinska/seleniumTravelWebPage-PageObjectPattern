@@ -18,36 +18,9 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-public class SignUpTest {
+public class SignUpTest extends BaseTest{
 
-    public WebDriver getDriver(String browser) {
-        switch (browser) {
-            case "chrome":
-                return new ChromeDriver();
-            case "firefox":
-                return new FirefoxDriver();
-            case "ie":
-                return new InternetExplorerDriver();
-            default:
-                throw new InvalidArgumentException("Invalid browser name");
-        }
-    }
 
-    private WebDriver driver; // wszystkie metody klasy mają dostęp do tego pola
-
-    // before
-    @BeforeMethod
-    public void setup() {
-        driver = getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.get("http://www.kurs-selenium.pl/demo/");
-    }
-
-    // after
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
 
     @Test
     public void signUpTest() {
@@ -83,7 +56,7 @@ public class SignUpTest {
 
 
     @Test
-    public void signUpTestEmptyForm() {
+    public void signUpEmptyFormTest() {
 
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); // oczekiwanie na elementy
 
@@ -109,7 +82,7 @@ public class SignUpTest {
 
 
     @Test
-    public void signUpInvalidEmail() {
+    public void signUpInvalidEmailTest() {
 
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); // oczekiwanie na elementy
 

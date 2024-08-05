@@ -1,16 +1,8 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.InvalidArgumentException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -18,41 +10,12 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-public class HotelSearch {
+public class HotelSearchTest extends BaseTest{
 
-    public WebDriver getDriver(String browser) {
-        switch (browser) {
-            case "chrome":
-                return new ChromeDriver();
-            case "firefox":
-                return new FirefoxDriver();
-            case "ie":
-                return new InternetExplorerDriver();
-            default:
-                throw new InvalidArgumentException("Invalid browser name");
-        }
-    }
-
-
-    private WebDriver driver; // wszystkie metody klasy mają dostęp do tego pola
-
-    // before
-    @BeforeMethod
-    public void setup() {
-        driver = getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.get("http://www.kurs-selenium.pl/demo/");
-    }
-
-    // after
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
 
 
     @Test
-    public void searchHotel() {
+    public void searchHotelTest() {
 
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
@@ -105,7 +68,7 @@ public class HotelSearch {
 
 
     @Test
-    public void searchHotelWithoutName() {
+    public void searchHotelWithoutNameTest() {
 
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
