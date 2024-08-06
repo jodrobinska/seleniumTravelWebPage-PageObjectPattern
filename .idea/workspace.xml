@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="BeforeMethod and AfterMethod in both">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Dodanie BaseTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AAGoogleHomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AAGoogleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HotelSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HotelSearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,24 +33,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.<default>.executor": "Run",
-    "TestNG.HotelSearch.executor": "Run",
-    "TestNG.HotelSearch.searchHotel.executor": "Run",
-    "TestNG.HotelSearch.searchHotelWithoutName.executor": "Run",
-    "TestNG.SignUpTest.executor": "Run",
-    "TestNG.SignUpTest.signUpInvalidEmail.executor": "Run",
-    "TestNG.SignUpTest.signUpTest.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/_Develope/projekt-na-3-judyta-odrobinska",
-    "onboarding.tips.debug.path": "C:/_Develope/travelsWebPage/src/main/java/pl/edu/agh/qa/Main.java",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.&lt;default&gt;.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HotelSearch.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HotelSearch.searchHotel.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HotelSearch.searchHotelWithoutName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SignUpTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SignUpTest.signUpInvalidEmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SignUpTest.signUpTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/_Develope/travelsWebPage&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/_Develope/travelsWebPage/src/main/java/pl/edu/agh/qa/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -312,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722887191060</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Dodanie BaseTest">
+      <option name="closed" value="true" />
+      <created>1722888108705</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1722888108705</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -344,7 +349,8 @@
     <MESSAGE value="Tests with assertions" />
     <MESSAGE value="BeforeMethod and AfterMethod in Sign Up" />
     <MESSAGE value="BeforeMethod and AfterMethod in both" />
-    <option name="LAST_COMMIT_MESSAGE" value="BeforeMethod and AfterMethod in both" />
+    <MESSAGE value="Dodanie BaseTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodanie BaseTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
