@@ -1,14 +1,11 @@
-package pl.deleniumdemo.tests;
+package pl.seleniumdemo.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pl.deleniumdemo.pages.HotelSearchPage;
+import pl.seleniumdemo.pages.HotelSearchPage;
 
-import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
@@ -20,7 +17,7 @@ public class HotelSearchTest extends BaseTest {
     @Test
     public void searchHotelTest() {
 
-        HotelSearchPage hotelSearchPage = new HotelSearchPage();
+        HotelSearchPage hotelSearchPage = new HotelSearchPage(driver);
         hotelSearchPage.setCity("Dubai");
         hotelSearchPage.setDates("20/07/2025","28/07/2025");
         hotelSearchPage.setTravellers();

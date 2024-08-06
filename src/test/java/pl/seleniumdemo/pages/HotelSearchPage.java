@@ -1,18 +1,13 @@
-package pl.deleniumdemo.pages;
+package pl.seleniumdemo.pages;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
+import org.openqa.selenium.support.PageFactory;
 
 public class HotelSearchPage {
 
+    // 1.PageObjectPattern
     @FindBy(xpath ="//span[text()='Search by Hotel or City Name']")
     private WebElement searchHotelSpan;
 
@@ -41,6 +36,15 @@ public class HotelSearchPage {
     private WebElement searchButton;
 
 
+
+    // 2.Page Factory
+    public HotelSearchPage(WebDriver driver) {
+        PageFactory.initElements(driver,this);
+    }
+
+
+
+    // 1.Page Object Pattern
     public void setCity(String cityName) {
         searchHotelSpan.click();
         searchHotelInput.sendKeys(cityName);

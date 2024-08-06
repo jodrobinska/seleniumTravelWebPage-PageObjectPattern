@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Google - Page Object Pattern">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/deleniumdemo/pages/HotelSearchPage.java" afterDir="false" />
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="HotelSearch - Page Object Pattern">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/deleniumdemo/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HotelSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/deleniumdemo/tests/HotelSearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/deleniumdemo/tests/SignUpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/deleniumdemo/pages/HotelSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/HotelSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/deleniumdemo/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/deleniumdemo/tests/HotelSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/tests/HotelSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/deleniumdemo/tests/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/tests/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,35 +35,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.&lt;default&gt;.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HotelSearch.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HotelSearch.searchHotel.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HotelSearch.searchHotelWithoutName.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SignUpTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SignUpTest.signUpInvalidEmail.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SignUpTest.signUpTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/_Develope/travelsWebPage&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/_Develope/travelsWebPage/src/main/java/pl/edu/agh/qa/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.<default>.executor": "Run",
+    "TestNG.HotelSearch.executor": "Run",
+    "TestNG.HotelSearch.searchHotel.executor": "Run",
+    "TestNG.HotelSearch.searchHotelWithoutName.executor": "Run",
+    "TestNG.HotelSearchTest.searchHotelTest.executor": "Run",
+    "TestNG.SignUpTest.executor": "Run",
+    "TestNG.SignUpTest.signUpInvalidEmail.executor": "Run",
+    "TestNG.SignUpTest.signUpTest.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/_Develope/travelsWebPage",
+    "onboarding.tips.debug.path": "C:/_Develope/travelsWebPage/src/main/java/pl/edu/agh/qa/Main.java",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.&lt;default&gt;">
-    <configuration name="HotelSearchTest.searchHotel" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.HotelSearchTest.searchHotelTest">
+    <configuration name="HotelSearchTest.searchHotelTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="pl.deleniumdemo.tests.HotelSearchTest" />
-      <option name="METHOD_NAME" value="searchHotel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.seleniumdemo.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.seleniumdemo.tests" />
+      <option name="MAIN_CLASS_NAME" value="pl.seleniumdemo.tests.HotelSearchTest" />
+      <option name="METHOD_NAME" value="searchHotelTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -74,7 +81,7 @@
     <configuration name="HotelSearchTest.searchHotelWithoutName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="pl.deleniumdemo.tests.HotelSearchTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.seleniumdemo.tests.HotelSearchTest" />
       <option name="METHOD_NAME" value="searchHotelWithoutName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -86,7 +93,7 @@
     <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="pl.deleniumdemo.tests.SignUpTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.seleniumdemo.tests.SignUpTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -97,7 +104,7 @@
     <configuration name="SignUpTest.signUpInvalidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="pl.deleniumdemo.tests.SignUpTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.seleniumdemo.tests.SignUpTest" />
       <option name="METHOD_NAME" value="signUpInvalidEmail" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -118,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HotelSearchTest.searchHotelTest" />
         <item itemvalue="TestNG.&lt;default&gt;" />
         <item itemvalue="TestNG.SignUpTest" />
         <item itemvalue="TestNG.SignUpTest.signUpInvalidEmail" />
         <item itemvalue="TestNG.HotelSearchTest.searchHotelWithoutName" />
-        <item itemvalue="TestNG.HotelSearchTest.searchHotel" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722953238301</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="HotelSearch - Page Object Pattern">
+      <option name="closed" value="true" />
+      <created>1722963660003</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1722963660003</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -370,7 +385,8 @@
     <MESSAGE value="Dodanie BaseTest" />
     <MESSAGE value="Google Page Object Pattern" />
     <MESSAGE value="Google - Page Object Pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Google - Page Object Pattern" />
+    <MESSAGE value="HotelSearch - Page Object Pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="HotelSearch - Page Object Pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

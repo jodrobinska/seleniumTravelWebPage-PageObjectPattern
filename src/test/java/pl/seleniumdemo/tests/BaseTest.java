@@ -1,4 +1,4 @@
-package pl.deleniumdemo.tests;
+package pl.seleniumdemo.tests;
 
 import org.openqa.selenium.InvalidArgumentException;
 import org.openqa.selenium.WebDriver;
@@ -40,7 +40,7 @@ public class BaseTest {
     // after
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+     //   driver.quit();
     }
 
 
