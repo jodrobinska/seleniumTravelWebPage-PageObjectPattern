@@ -90,6 +90,7 @@ public class HotelSearchTest extends BaseTest{
         //--- Asercje
         Assert.assertTrue(noResultHeading.isDisplayed());
         Assert.assertEquals(noResultHeading.getText(),"No Results Found");
+
     }
 
 }

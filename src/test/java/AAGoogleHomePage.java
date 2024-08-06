@@ -14,4 +14,5 @@ public class AAGoogleHomePage {
         searchInput.sendKeys(phrase);
         searchButton.click();
     }
+
 }

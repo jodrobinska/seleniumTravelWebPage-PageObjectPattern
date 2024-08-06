@@ -112,6 +112,7 @@ public class SignUpTest extends BaseTest{
 
         Assert.assertTrue(errors.contains("The Email field must contain a valid email address."));
 
+
     }
 
 }
