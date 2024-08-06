@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Google Page Object Pattern">
-      <change beforePath="$PROJECT_DIR$/src/test/java/AAGoogleHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AAGoogleHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AAGoogleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AAGoogleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HotelSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HotelSearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTest.java" afterDir="false" />
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Google - Page Object Pattern">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/deleniumdemo/pages/HotelSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/deleniumdemo/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HotelSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/deleniumdemo/tests/HotelSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/deleniumdemo/tests/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
     <configuration name="HotelSearchTest.searchHotel" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HotelSearchTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.deleniumdemo.tests.HotelSearchTest" />
       <option name="METHOD_NAME" value="searchHotel" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -74,7 +74,7 @@
     <configuration name="HotelSearchTest.searchHotelWithoutName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HotelSearchTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.deleniumdemo.tests.HotelSearchTest" />
       <option name="METHOD_NAME" value="searchHotelWithoutName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -86,7 +86,7 @@
     <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.deleniumdemo.tests.SignUpTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -97,7 +97,7 @@
     <configuration name="SignUpTest.signUpInvalidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.deleniumdemo.tests.SignUpTest" />
       <option name="METHOD_NAME" value="signUpInvalidEmail" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -327,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722952982080</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Google - Page Object Pattern">
+      <option name="closed" value="true" />
+      <created>1722953238301</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1722953238301</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -361,7 +369,8 @@
     <MESSAGE value="BeforeMethod and AfterMethod in both" />
     <MESSAGE value="Dodanie BaseTest" />
     <MESSAGE value="Google Page Object Pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Google Page Object Pattern" />
+    <MESSAGE value="Google - Page Object Pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Google - Page Object Pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
