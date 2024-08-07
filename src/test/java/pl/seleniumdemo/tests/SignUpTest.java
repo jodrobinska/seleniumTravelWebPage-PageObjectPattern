@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import pl.seleniumdemo.pages.HotelSearchPage;
+import pl.seleniumdemo.pages.SignUpPage;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -17,20 +19,31 @@ public class SignUpTest extends BaseTest {
     @Test
     public void signUpTest() {
 
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); // oczekiwanie na elementy
+        //--- Sign Up
+        //driver.findElements(By.xpath("//li[@id='li_myaccount']")).stream().filter(WebElement::isDisplayed).findFirst().ifPresent(WebElement::click);
+        //driver.findElements(By.xpath("//a[text()='  Sign Up']")).get(1).click();
+        HotelSearchPage hotelSearchPage = new HotelSearchPage(driver);
+        hotelSearchPage.openSignUpForm();
 
-        // Sign Up
-        driver.findElements(By.xpath("//li[@id='li_myaccount']")).stream().filter(WebElement::isDisplayed).findFirst().ifPresent(WebElement::click);
-        driver.findElements(By.xpath("//a[text()='  Sign Up']")).get(1).click();
 
-        // Filling the Form
+        //--- Filling the Form
         String lastName = "Oska";
-
-        // Unikalny adres email
+        //--- Unikalny adres email
         int randomNumber = (int) (Math.random()*1000); //numer
         String email = "judit" + randomNumber + "@gmail.com"; //email
 
-        // Filling the Form
+
+        SignUpPage signUpPage = new SignUpPage(driver);
+        signUpPage.setFirstName("Judyta");
+        signUpPage.setLasttName(lastName);
+        signUpPage.setPhone("666111222");
+        signUpPage.setEmail(email);
+        signUpPage.setPassword("Test123");
+        signUpPage.confirmPasswordInput("Test123");
+        signUpPage.signUp();
+
+        /*
+        //--- Filling the Form
         driver.findElement(By.name("firstname")).sendKeys("Judyta");
         driver.findElement(By.name("lastname")).sendKeys(lastName);
         driver.findElement(By.name("phone")).sendKeys("666111222");
@@ -38,6 +51,7 @@ public class SignUpTest extends BaseTest {
         driver.findElement(By.name("password")).sendKeys("Test123");
         driver.findElement(By.name("confirmpassword")).sendKeys("Test123");
         driver.findElement(By.xpath("//button[text()=' Sign Up']")).click();
+         */
 
         WebElement heading = driver.findElement(By.xpath("//h3[@class='RTL']"));
 
