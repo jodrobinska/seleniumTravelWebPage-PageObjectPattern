@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Page Object Pattern and Page Factory">
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Page Object Pattern for searchHotelWithoutNameTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/HotelSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/HotelSearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/ResultsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/tests/HotelSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/tests/HotelSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,25 +33,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.&lt;default&gt;.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HotelSearch.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HotelSearch.searchHotel.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HotelSearch.searchHotelWithoutName.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HotelSearchTest.searchHotelTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SignUpTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SignUpTest.signUpInvalidEmail.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SignUpTest.signUpTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/_Develope/travelsWebPage&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/_Develope/travelsWebPage/src/main/java/pl/edu/agh/qa/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.<default>.executor": "Run",
+    "TestNG.HotelSearch.executor": "Run",
+    "TestNG.HotelSearch.searchHotel.executor": "Run",
+    "TestNG.HotelSearch.searchHotelWithoutName.executor": "Run",
+    "TestNG.HotelSearchTest.searchHotelTest.executor": "Run",
+    "TestNG.HotelSearchTest.searchHotelWithoutNameTest.executor": "Run",
+    "TestNG.SignUpTest.executor": "Run",
+    "TestNG.SignUpTest.signUpInvalidEmail.executor": "Run",
+    "TestNG.SignUpTest.signUpTest.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/_Develope/travelsWebPage",
+    "onboarding.tips.debug.path": "C:/_Develope/travelsWebPage/src/main/java/pl/edu/agh/qa/Main.java",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -77,11 +77,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelSearchTest.searchHotelWithoutName" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HotelSearchTest.searchHotelWithoutNameTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
-      <option name="PACKAGE_NAME" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.seleniumdemo.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.seleniumdemo.tests" />
       <option name="MAIN_CLASS_NAME" value="pl.seleniumdemo.tests.HotelSearchTest" />
-      <option name="METHOD_NAME" value="searchHotelWithoutName" />
+      <option name="METHOD_NAME" value="searchHotelWithoutNameTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -125,10 +131,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.HotelSearchTest.searchHotelTest" />
+        <item itemvalue="TestNG.HotelSearchTest.searchHotelWithoutNameTest" />
         <item itemvalue="TestNG.&lt;default&gt;" />
         <item itemvalue="TestNG.SignUpTest" />
         <item itemvalue="TestNG.SignUpTest.signUpInvalidEmail" />
-        <item itemvalue="TestNG.HotelSearchTest.searchHotelWithoutName" />
       </list>
     </recent_temporary>
   </component>
@@ -365,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723017846851</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Page Object Pattern for searchHotelWithoutNameTest">
+      <option name="closed" value="true" />
+      <created>1723025313284</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1723025313284</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -403,7 +417,8 @@
     <MESSAGE value="HotelSearch - Page Object Pattern" />
     <MESSAGE value="Page Factory" />
     <MESSAGE value="Page Object Pattern and Page Factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Page Object Pattern and Page Factory" />
+    <MESSAGE value="Page Object Pattern for searchHotelWithoutNameTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Page Object Pattern for searchHotelWithoutNameTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

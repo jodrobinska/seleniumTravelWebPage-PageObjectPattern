@@ -70,7 +70,7 @@ public class HotelSearchTest extends BaseTest {
         hotelNames.forEach(el -> System.out.println(el));
          */
 
-        //--- Asercje
+        //--- Asercje dla Dubaju
         Assert.assertEquals(hotelNames.get(0),"Jumeirah Beach Hotel"); // Expected - wpisany przeze mnie; Actual - znajdujący się na stronie
         Assert.assertEquals(hotelNames.get(1),"Oasis Beach Tower");
         Assert.assertEquals(hotelNames.get(2),"Rose Rayhaan Rotana");
