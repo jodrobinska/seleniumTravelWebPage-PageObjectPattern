@@ -1,7 +1,5 @@
 package pl.seleniumdemo.tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -10,12 +8,8 @@ import pl.seleniumdemo.pages.LoggedUserPage;
 import pl.seleniumdemo.pages.SignUpPage;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
 
 public class SignUpTest extends BaseTest {
-
-
 
     @Test
     public void signUpTest() {
@@ -73,17 +67,24 @@ public class SignUpTest extends BaseTest {
     @Test
     public void signUpEmptyFormTest() {
 
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); // oczekiwanie na elementy
-
-        // Sign Up
+        /*
+        //--- Sign Up
         driver.findElements(By.xpath("//li[@id='li_myaccount']")).stream().filter(WebElement::isDisplayed).findFirst().ifPresent(WebElement::click);
         driver.findElements(By.xpath("//a[text()='  Sign Up']")).get(1).click(); // Sign Up na stronie głównej
+         */
+        HotelSearchPage hotelSearchPage = new HotelSearchPage(driver);
+        hotelSearchPage.openSignUpForm();
 
-        driver.findElement(By.xpath("//button[text()=' Sign Up']")).click(); //Sign Up pod formularzem
+        //driver.findElement(By.xpath("//button[text()=' Sign Up']")).click(); //Sign Up pod formularzem
+        SignUpPage signUpPage = new SignUpPage(driver);
+        signUpPage.signUp(); //wywołujemy metodę 'SignUp'
 
-        List<String> errors = driver.findElements(By.xpath("//div[@class='alert alert-danger']//p")).stream()
+
+        /*List<String> errors = driver.findElements(By.xpath("//div[@class='alert alert-danger']//p")).stream()
                 .map(WebElement::getText)
                 .collect(Collectors.toList());
+         */
+        List<String> errors = signUpPage.getErrors();
 
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(errors.contains("The Email field is required."));
@@ -99,19 +100,21 @@ public class SignUpTest extends BaseTest {
     @Test
     public void signUpInvalidEmailTest() {
 
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); // oczekiwanie na elementy
-
+        /*
         // Sign Up
         driver.findElements(By.xpath("//li[@id='li_myaccount']")).stream().filter(WebElement::isDisplayed).findFirst().ifPresent(WebElement::click);
         driver.findElements(By.xpath("//a[text()='  Sign Up']")).get(1).click();
+         */
+        HotelSearchPage hotelSearchPage = new HotelSearchPage(driver);
+        hotelSearchPage.openSignUpForm();
 
-        // Filling the Form
-        String lastName = "Kowalska";
 
         // Unikalny adres email
         int randomNumber = (int) (Math.random()*1000); //numer
         String email = "judit" + randomNumber; // niezgodny format e-mail'a
 
+
+        /*
         // Filling the Form
         driver.findElement(By.name("firstname")).sendKeys("Katarzyna");
         driver.findElement(By.name("lastname")).sendKeys(lastName);
@@ -120,13 +123,27 @@ public class SignUpTest extends BaseTest {
         driver.findElement(By.name("password")).sendKeys("Test123");
         driver.findElement(By.name("confirmpassword")).sendKeys("Test123");
         driver.findElement(By.xpath("//button[text()=' Sign Up']")).click();
+         */
+        SignUpPage signUpPage = new SignUpPage(driver);
+        signUpPage.setFirstName("Judyta");
+        signUpPage.setLasttName("Kowalska");
+        signUpPage.setPhone("666111222");
+        signUpPage.setEmail(email);
+        signUpPage.setPassword("Test123");
+        signUpPage.confirmPasswordInput("Test123");
+        signUpPage.signUp();
 
-        List<String> errors = driver.findElements(By.xpath("//div[@class='alert alert-danger']//p")).stream()
+
+        /*List<String> errors = driver.findElements(By.xpath("//div[@class='alert alert-danger']//p")).stream()
                 .map(WebElement::getText)
                 .collect(Collectors.toList());
+         */
+        List<String> errors = signUpPage.getErrors();
 
         Assert.assertTrue(errors.contains("The Email field must contain a valid email address."));
 
+        // można krócej
+        //Assert.assertTrue(signUpPage.getErrors().contains("The Email field must contain a valid email address."));
 
     }
 

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="SignUp - Page Object Pattern">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/LoggedUserPage.java" afterDir="false" />
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Logged User Page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/SignUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/tests/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/tests/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,9 @@
     "TestNG.HotelSearchTest.searchHotelTest.executor": "Run",
     "TestNG.HotelSearchTest.searchHotelWithoutNameTest.executor": "Run",
     "TestNG.SignUpTest.executor": "Run",
+    "TestNG.SignUpTest.signUpEmptyFormTest.executor": "Run",
     "TestNG.SignUpTest.signUpInvalidEmail.executor": "Run",
+    "TestNG.SignUpTest.signUpInvalidEmailTest.executor": "Run",
     "TestNG.SignUpTest.signUpTest.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -58,7 +60,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SignUpTest.signUpTest">
+  <component name="RunManager" selected="TestNG.SignUpTest">
     <configuration name="HotelSearchTest.searchHotelTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <extension name="coverage">
@@ -77,7 +79,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelSearchTest.searchHotelWithoutNameTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="travelsWebPage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="pl.seleniumdemo.tests.SignUpTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTest.signUpEmptyFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
       <extension name="coverage">
         <pattern>
@@ -86,8 +99,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.seleniumdemo.tests" />
-      <option name="MAIN_CLASS_NAME" value="pl.seleniumdemo.tests.HotelSearchTest" />
-      <option name="METHOD_NAME" value="searchHotelWithoutNameTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.seleniumdemo.tests.SignUpTest" />
+      <option name="METHOD_NAME" value="signUpEmptyFormTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -95,11 +108,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest.signUpInvalidEmailTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="travelsWebPage" />
-      <option name="PACKAGE_NAME" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.seleniumdemo.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.seleniumdemo.tests" />
       <option name="MAIN_CLASS_NAME" value="pl.seleniumdemo.tests.SignUpTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="signUpInvalidEmailTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -124,23 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="travelsWebPage" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SignUpTest.signUpTest" />
         <item itemvalue="TestNG.SignUpTest" />
+        <item itemvalue="TestNG.SignUpTest.signUpInvalidEmailTest" />
+        <item itemvalue="TestNG.SignUpTest.signUpEmptyFormTest" />
+        <item itemvalue="TestNG.SignUpTest.signUpTest" />
         <item itemvalue="TestNG.HotelSearchTest.searchHotelTest" />
-        <item itemvalue="TestNG.HotelSearchTest.searchHotelWithoutNameTest" />
-        <item itemvalue="TestNG.&lt;default&gt;" />
       </list>
     </recent_temporary>
   </component>
@@ -401,7 +411,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723048907055</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Logged User Page">
+      <option name="closed" value="true" />
+      <created>1723050059170</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1723050059170</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -416,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Set check in and check out" />
     <MESSAGE value="Set check in and check out with lambda expression" />
     <MESSAGE value="List of hotels" />
     <MESSAGE value="Assert" />
@@ -441,7 +458,8 @@
     <MESSAGE value="Page Object Pattern for searchHotelWithoutNameTest" />
     <MESSAGE value="Changes in SetCity" />
     <MESSAGE value="SignUp - Page Object Pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="SignUp - Page Object Pattern" />
+    <MESSAGE value="Logged User Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logged User Page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
