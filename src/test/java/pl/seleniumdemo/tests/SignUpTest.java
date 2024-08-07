@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pl.seleniumdemo.pages.HotelSearchPage;
+import pl.seleniumdemo.pages.LoggedUserPage;
 import pl.seleniumdemo.pages.SignUpPage;
 
 import java.util.List;
@@ -53,10 +54,18 @@ public class SignUpTest extends BaseTest {
         driver.findElement(By.xpath("//button[text()=' Sign Up']")).click();
          */
 
+        /*
         WebElement heading = driver.findElement(By.xpath("//h3[@class='RTL']"));
+         */
 
+        LoggedUserPage loggedUserPage = new LoggedUserPage(driver);
+
+        /*
         Assert.assertTrue(heading.getText().contains(lastName)); // czy heading zawiera nazwisko
         Assert.assertEquals(heading.getText(),"Hi, Judyta Oska"); // (aktualny ze strony, oczekiwany przez nas)
+         */
+        Assert.assertTrue(loggedUserPage.getHeadingText().contains(lastName));
+        Assert.assertEquals(loggedUserPage.getHeadingText(),"Hi, Judyta Oska");
 
     }
 
