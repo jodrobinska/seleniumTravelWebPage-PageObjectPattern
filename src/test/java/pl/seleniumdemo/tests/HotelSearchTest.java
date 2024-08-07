@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pl.seleniumdemo.pages.HotelSearchPage;
+import pl.seleniumdemo.pages.ResultsPage;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -22,7 +23,6 @@ public class HotelSearchTest extends BaseTest {
         hotelSearchPage.setDates("20/07/2025","28/07/2025");
         hotelSearchPage.setTravellers();
         hotelSearchPage.performSearch();
-
 
     /*    // set city name
         driver.findElement(By.xpath("//span[text()='Search by Hotel or City Name']")).click();
@@ -57,12 +57,18 @@ public class HotelSearchTest extends BaseTest {
         driver.findElement(By.xpath("//button[text()=' Search']")).click();
      */
 
+
+        ResultsPage resultsPage = new ResultsPage(driver);
+        List<String> hotelNames = resultsPage.getHotelNames();
+
+        /*
         //--- list of hotels
         List<String> hotelNames = driver.findElements(By.xpath("//h4[contains(@class,'list_title')]//b")).stream()
                 .map(el -> el.getAttribute("textContent"))
                 .collect(Collectors.toList());
         System.out.println(hotelNames.size());
         hotelNames.forEach(el -> System.out.println(el));
+         */
 
         //--- Asercje
         Assert.assertEquals(hotelNames.get(0),"Jumeirah Beach Hotel"); // Expected - wpisany przeze mnie; Actual - znajdujący się na stronie
