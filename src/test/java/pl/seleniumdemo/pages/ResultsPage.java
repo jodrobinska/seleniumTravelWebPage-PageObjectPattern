@@ -14,6 +14,9 @@ public class ResultsPage {
     @FindBy(xpath = "//h4[contains(@class,'list_title')]//b")
     private List<WebElement> hotelList;
 
+    @FindBy(xpath = "//h2[text()='No Results Found']")
+    public WebElement resultHeading;
+
     // 2.Page Factory
     public ResultsPage(WebDriver driver) {
         PageFactory.initElements(driver,this);
@@ -25,5 +28,9 @@ public class ResultsPage {
         return hotelList.stream()
                 .map(el -> el.getAttribute("textContent"))
                 .collect(Collectors.toList());
+    }
+
+    public String getHeadingText() {
+        return resultHeading.getText();
     }
 }

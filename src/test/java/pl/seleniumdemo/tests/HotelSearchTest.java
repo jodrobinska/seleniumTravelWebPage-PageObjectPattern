@@ -21,7 +21,7 @@ public class HotelSearchTest extends BaseTest {
         HotelSearchPage hotelSearchPage = new HotelSearchPage(driver);
         hotelSearchPage.setCity("Dubai");
         hotelSearchPage.setDates("20/07/2025","28/07/2025");
-        hotelSearchPage.setTravellers();
+        hotelSearchPage.setTravellers(1,2);
         hotelSearchPage.performSearch();
 
     /*    // set city name
@@ -82,10 +82,14 @@ public class HotelSearchTest extends BaseTest {
     @Test
     public void searchHotelWithoutNameTest() {
 
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+        HotelSearchPage hotelSearchPage = new HotelSearchPage(driver);
+        hotelSearchPage.setDates("05/08/2024","09/08/2024");
+        hotelSearchPage.setTravellers(0,1);
+        hotelSearchPage.performSearch();
 
+        /*
         //------ set check in
-        driver.findElement(By.name("checkin")).sendKeys("05/08/2024");
+        driver.findElement(By.name("checkin")).sendKeys("07/08/2024");
         //------ set check out
         driver.findElement(By.name("checkout")).sendKeys("09/08/2024");
 
@@ -95,13 +99,22 @@ public class HotelSearchTest extends BaseTest {
 
         //--- search
         driver.findElement(By.xpath("//button[text()=' Search']")).click();
+         */
 
 
+
+        ResultsPage resultsPage = new ResultsPage(driver);
+        Assert.assertTrue(resultsPage.resultHeading.isDisplayed());
+        Assert.assertEquals(resultsPage.getHeadingText(),"No Results Found");
+
+
+        /*
         WebElement noResultHeading = driver.findElement(By.xpath("//h2[text()='No Results Found']"));
 
         //--- Asercje
         Assert.assertTrue(noResultHeading.isDisplayed());
         Assert.assertEquals(noResultHeading.getText(),"No Results Found");
+         */
 
     }
 

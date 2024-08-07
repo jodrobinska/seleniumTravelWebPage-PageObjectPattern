@@ -56,10 +56,21 @@ public class HotelSearchPage {
         checkoutInput.sendKeys(checkout);
     }
 
+    /* //metoda mało elastyczna
     public void setTravellers() {
         travellersInput.click();
         adultPlusBtn.click();
         childPlusBtn.click();
+    }
+     */
+    public void setTravellers(int adultsToAdd, int childToAdd) {
+        travellersInput.click();
+        for (int i = 0; i < adultsToAdd; i++) {
+            adultPlusBtn.click();
+        }
+        for (int i = 0; i < childToAdd; i++) {
+            childPlusBtn.click();
+        }
     }
 
     public void performSearch() {

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Page Factory">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/ResultsPage.java" afterDir="false" />
+    <list default="true" id="8e012117-0ae4-4297-bfd5-9545d50ffb70" name="Changes" comment="Page Object Pattern and Page Factory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/HotelSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/HotelSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/pages/ResultsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/tests/HotelSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/seleniumdemo/tests/HotelSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -357,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722965309777</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Page Object Pattern and Page Factory">
+      <option name="closed" value="true" />
+      <created>1723017846851</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1723017846851</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -394,7 +402,8 @@
     <MESSAGE value="Google - Page Object Pattern" />
     <MESSAGE value="HotelSearch - Page Object Pattern" />
     <MESSAGE value="Page Factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Page Factory" />
+    <MESSAGE value="Page Object Pattern and Page Factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Page Object Pattern and Page Factory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
